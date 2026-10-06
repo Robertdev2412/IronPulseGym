@@ -1,0 +1,504 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.about {
+  width: 100vw;
+  height: auto;
+  margin-top: 40px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  padding: 10px;
+}
+.aboutText {
+  width: 70%;
+  height: auto;
+  margin: auto;
+}
+.about h1 {
+  font-weight: 700;
+  font-family: "Times New Roman", Times, serif;
+}
+.keunggulan {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  justify-content: center;
+  margin-top: 30px;
+  gap: 15px;
+  margin-bottom: 100px;
+}
+
+.keunggulan1,
+.keunggulan2,
+.keunggulan3,
+.keunggulan4 {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  margin: auto;
+  border: 2px solid red;
+  padding-left: 5px;
+  padding-right: 5px;
+  animation: muncul 1s linear;
+  animation-timeline: view();
+  animation-range: entry 0;
+  transition: 0.3s;
+}
+.keunggulan1 {
+  background: linear-gradient(135deg, red, rgb(44, 9, 2));
+}
+
+.keunggulan2 {
+  background: linear-gradient(to right, rgb(181, 37, 1), rgb(255, 0, 0));
+}
+.keunggulan3 {
+  background: linear-gradient(to left, red, rgb(144, 3, 87));
+}
+.keunggulan4 {
+  background: linear-gradient(70deg, red, rgb(119, 107, 18));
+}
+.keunggulan1:hover,
+.keunggulan2:hover,
+.keunggulan3:hover,
+.keunggulan4:hover {
+transform: scale(1.1);
+}
+@keyframes muncul {
+  from {
+    scale: 0.5;
+    opacity: 0;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+/* ============programs============ */
+.programs {
+  margin-top: 100px;
+  width: 90vw;
+  margin: auto;
+  height: auto;
+  border: 1.5px solid white;
+  color: white;
+  background: linear-gradient(180deg, rgb(45, 43, 43), black);
+  border-radius: 10px;
+  text-align: center;
+  animation: munculprogram 2s linear;
+  padding: 5px;
+  transition: 0.5s;
+  animation-timeline: view();
+  animation-range: entry 0;
+  margin-bottom: 100px;
+}
+.programs:hover {
+  background: linear-gradient(180deg, black, rgb(45, 43, 43));
+}
+
+.programs h1 {
+  font-size: 2rem;
+}
+.programsPart {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.programsPart p {
+  text-align: left;
+}
+
+@keyframes munculprogram {
+  from {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* ==========pricing========== */
+.pricing {
+  width: 70vw;
+  height: AUTO;
+   margin: auto;
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif
+}
+.pricing h1{
+  color: rgb(226, 3, 3);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.pricing p{
+  transform: translateY(-20px);
+}
+.price {
+  width: 100vw;
+  height: auto;
+  display: grid;
+  gap: 50px;
+  margin-bottom: 100px;
+  grid-template-columns: repeat(auto-fit, 300px);
+  padding-top: 15PX;
+  justify-content: center;
+}
+.cheap,
+.medium,
+.premium {
+  background-color: rgb(1, 1, 1);
+  border-radius: 17px;
+  height: 500px;
+  transition: 0.3s;
+  color: antiquewhite;
+}
+.cheap:hover,
+.medium:hover,
+.premium:hover {
+  transform: scale(1.05) translateY(-25px);
+}
+.cheap {
+  border: 2px solid grey;
+  animation: cheapCard 500ms linear;
+  animation-timeline: view();
+  animation-range: entry 0;
+}
+.medium {
+  border: 2px solid rgb(241, 4, 4);
+  animation: mediumCard 500ms linear;
+  animation-timeline: view();
+  animation-range: entry 0;
+}
+.premium {
+  border: 2px solid rgb(190, 170, 24);
+  animation: cheapCard 500ms linear;
+  animation-timeline: view();
+  animation-range: entry 0;
+}
+
+@keyframes cheapCard {
+  from {
+    transform: perspective(700px) rotatey(-100deg);
+    opacity: 0;
+  }
+  to {
+    transform: perspective(900px) rotatey(0);
+    opacity: 1;
+  }
+}
+@keyframes mediumCard {
+  from {
+    transform: perspective(700px) rotatey(100deg);
+    opacity: 0;
+  }
+  to {
+    transform: perspective(900px) rotatey(0);
+    opacity: 1;
+  }
+}
+
+.cheapLogo,
+.mediumLogo,
+.premiumLogo {
+  width: 90px;
+  background: linear-gradient(180deg, rgb(171, 171, 169), rgb(47, 46, 45));
+  height: 90px;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 17%;
+  font-size: 4rem;
+  font-weight: 600;
+  text-align: center;
+  align-content: center;
+  padding-top: 13px;
+  box-sizing: border-box;
+  border :1px solid rgb(206, 196, 196);
+}
+.mediumLogo {
+  background: linear-gradient(45deg, rgb(226, 3, 3), rgb(74, 24, 6));
+  margin-top: 5%;
+  font-size: 3rem;
+  padding-top: 7px;
+  border: 1px solid red;
+}
+.premiumLogo {
+  background: linear-gradient(135deg, rgb(226, 171, 3), rgb(112, 76, 8));
+  font-size: 3rem;
+  padding-top: 7px;
+  border: 1px solid gold;
+}
+.populerCard {
+  width: 40%;
+  height: 7%;
+  background: linear-gradient(180deg, rgb(226, 3, 3), rgb(74, 24, 6));
+  margin: auto;
+  font-size: 0.7rem;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 10px;
+  color: rgb(239, 192, 5);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.textAndPrice {
+  width: 50%;
+  height: 23%;
+  margin: auto;
+  box-sizing: border-box;
+  padding-top: 10px;
+}
+.textPart {
+  width: 100%;
+  height: 40%;
+  color: rgb(255, 254, 254);
+  font-size: 0.7rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+.textPartBasic,
+.textPartMedium,
+.textPartPremium {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.textPartPremium {
+  color: rgb(235, 170, 8);
+}
+.textPartMedium {
+  color: red;
+}
+.pricePart {
+  width: 100%;
+  height: 49%;
+  text-align: center;
+  font-size: 1.6rem;
+}
+.month {
+  font-size: 0.9rem;
+}
+.result {
+  width: 80%;
+  height: 30%;
+  transform: translateY(-40px);
+  margin: auto;
+}
+.result ul li {
+  list-style: none;
+  font-size: 0.85rem;
+  margin-bottom: 3px;
+}
+.choosePlanB,
+.choosePlanM,
+.choosePlanP {
+  margin: auto;
+  width: 50%;
+  height: 8%;
+  transform: translateY(-10px);
+}
+.choosePlanB button,
+.choosePlanM button,
+.choosePlanP button {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: rgb(172, 173, 175);
+  color: white;
+  background: linear-gradient(180deg, rgb(182, 179, 179), rgb(92, 91, 90));
+  border: rgb(255, 250, 250) 1px solid;
+  transition: 0.3s;
+}
+.choosePlanM button {
+  background: linear-gradient(180deg, rgb(226, 3, 3), rgb(91, 26, 2));
+  border: red 1px solid;
+}
+.choosePlanP button {
+  background: linear-gradient(180deg, rgb(244, 185, 8), rgb(76, 54, 2));
+  border: rgb(225, 168, 12) 1px solid;
+}
+.choosePlanM button:hover,
+.choosePlanB button:hover,
+.choosePlanP button:hover {
+  transform: scale(1.15);
+  font-size: 0.9rem;
+  background: linear-gradient(180deg, rgb(67, 93, 103), rgb(239, 211, 208));
+border:2px solid rgb(116, 116, 132);
+}
+.choosePlanM button:hover {
+background: linear-gradient(180deg, rgb(90, 32, 3), rgb(255, 21, 0));
+border:2px solid rgb(244, 12, 70);
+}
+.choosePlanP button:hover {
+  background: linear-gradient(180deg, rgb(199, 210, 0), rgb(252, 181, 1));
+border:2px solid rgb(221, 255, 0);
+}
+.resultRed li i{
+  color: red;
+}
+.resultGold li i{
+  color: rgb(220, 166, 6);
+}
+
+
+/* ==========contact============== */
+.contactTitle{
+  width: 70vw;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.contactTitle h1{
+  color: rgb(226, 3, 3);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.contactTitle p{
+  transform: translateY(-20px);
+}
+.contactSubTitle{
+  font-size: 2rem;
+  font-weight: 600;
+}
+.mustRed{
+  color: red;
+}
+.contact{
+  width: 100vw;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,300px);
+  padding-top: 25px;
+  gap: 20px;
+  justify-content: center;
+}
+.contactPerson{
+  background:black;
+  border: 2px solid red;
+  border-radius:15px;
+  height: 500px;
+  transition: 0.4s;
+  animation: contactCard 0.5s linear ;
+   animation-timeline: view();
+  animation-range: entry 0;
+}
+.contactPerson:hover{
+  transform: scale(1.03);
+}
+@keyframes contactCard {
+  from {
+    transform: translatey(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.person{
+  width: 95%;
+  height: 45%;
+  margin: auto;
+}
+.person img{
+  width: 100%;
+  height: 100%;
+}
+.personInfo{
+  height: 30%;
+  width: 100%;
+  border-top:1px solid white ;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.namePerson{
+  font-size: 2rem;
+}
+.classPerson{
+  color: red;
+  font-size: 1.4rem;
+}
+.infoSkillPerson{
+  width: 90%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top:15px;
+  margin-bottom: 20px;
+}
+.skilPerson1,.skilPerson2,.skilPerson3{
+  width: 50%;
+  height: 65px;
+ color: white;
+}
+.skilPerson1 i,.skilPerson2 i,.skilPerson3 i{
+ color: white;
+}
+.skilPerson2{
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+.contactNow{
+  width: 65%;
+  height: auto;
+  margin: auto;
+
+}
+.contactNow button{
+  width: 100%;
+  height: 45px;
+  border-radius: 17px;
+  font-size: 1rem;
+  background-color:red ;
+  color: white;
+  border:none;
+  transition: 0.3s;
+}
+.contactNow button:hover{
+  transform: scale(1.05);
+  font-size: 1.1rem;
+  border: 1px solid rgb(255, 0, 208);
+}
+
+
+
+@media (max-width: 480px) {
+  .programs img {
+    width: 40vw;
+  }
+  .contact{
+    padding-top: 0;
+  }
+  .price{
+    padding-top: 0;
+  }
+}
+@media (max-width: 380px) {
+}
+@media (min-width: 481px) and (max-width: 900px) {
+  .programs img {
+    width: 40vw;
+  }
+  .contact{
+    padding-top: 0;
+  }
+  .price{
+    padding-top: 0;
+  }
+}
+/* Laptop */
+@media (min-width: 769px) and (max-width: 1024px) {
+}

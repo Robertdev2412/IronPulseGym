@@ -1,0 +1,184 @@
+.footer{
+     width:auto ;
+    height: auto;
+}
+.footer1{
+    width:100vw ;
+    height:auto;
+    margin-top: 70px;
+    background:linear-gradient(185deg,rgb(31, 30, 30) ,rgb(124, 1, 1));
+    border-top: 2px solid red;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,250px);
+    box-sizing: border-box;
+    padding-top: 40px;
+    color: white;
+    justify-content: center;
+    gap: 20px;
+}
+.footerIsi1,.footerIsi2,.footerIsi3,.footerIsi4{
+height: 250px;
+font-family: Arial, Helvetica, sans-serif;
+}
+.footerIsi11{
+    display: flex;
+    width: auto;
+    height: auto;
+    margin-bottom: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.textTitleBottom{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.gymBottom{
+    font-size: 0.7rem;
+    position: relative;
+    left: -63px;
+    top: 10px;
+}
+.pulseBottom{
+   color: red;
+}
+.cta{
+    width: 100%;
+    height: 20%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+.fb,.x,.yt,.wa,.ig{
+    width: 15%;
+    height: 75%;
+    align-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: black;
+    transition: 0.3s;
+}
+.fb:hover{
+    transform: scale(1.2) translateY(-10px);
+    background: linear-gradient(185deg,blue,rgb(4, 6, 130));
+    font-size: 1.2rem;
+}
+.x:hover{
+      transform: scale(1.2) translateY(-10px);
+      font-size: 1.2rem;
+}
+.yt:hover{
+      transform: scale(1.2) translateY(-10px);
+      color: red;
+      background-color: white;
+       font-size: 1.2rem;
+}
+.wa:hover{
+      transform: scale(1.2) translateY(-10px);
+      background-color: rgb(7, 249, 128);
+       font-size: 1.2rem;
+}
+.ig:hover{
+      transform: scale(1.2) translateY(-10px);
+      background:linear-gradient(185deg,rgb(255, 8, 230),rgb(244, 214, 18));;
+       font-size: 1.2rem;
+}
+
+.footerHeader{
+    width: 100%;
+    height: 15%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.redLine{
+border-bottom: 3px solid red;
+}
+.footerIsi2 ul{
+    transform: translateX(30px) translateY(-15px);
+}
+.footerIsi2 ul li{
+    list-style: none;
+    margin-bottom: 5px;
+}
+.footerIsi2 ul li a{
+ text-decoration: none;
+color: white;
+}
+.footerIsi2 ul li :hover{
+ text-decoration: underline;
+ font-weight: 600;
+ font-size: 1.03rem;
+}
+.footerIsi3 ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.footerIsi3 ul li i{
+ color: red;
+ font-size: 1.2rem;
+}
+.gTauLagi{
+    width: 20px;
+    height: auto;
+    background-color: aquamarine;
+}
+#text{
+    margin-left: 10px;
+}
+#turun{
+    margin-left: 32px;
+}
+
+#footerForm{
+    width: auto;
+    height: auto;
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+}
+#footerForm input{
+    width: 200px;
+    height: 30px;
+    border-bottom-left-radius: 10px;
+border-top-left-radius: 10px;
+background-color: black;
+border: 2px solid red;
+color: white;
+border-right: none;
+}
+#footerForm button{
+width: 35px;
+height: 35px;
+font-size: 1.2rem;
+background-color: black;
+border: 2px solid red;
+color: white;
+border-bottom-right-radius: 10px;
+border-top-right-radius: 10px;
+}
+
+.footer2{
+    background-color: black;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.copyright,.desaigned,.privacy{
+    width: 20%;
+    height: auto;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    font-size: clamp(10px,1vw,20px);
+    box-sizing: content-box;
+}
+
+@media (min-width: 481px) and (max-width: 900px) {
+    .copyright,.desaigned,.privacy{
+    box-sizing: content-box;
+}
+}

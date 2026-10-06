@@ -1,0 +1,98 @@
+
+.logo{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    width: auto;
+    height: 100%;
+    display: flex;
+    /* background-color: aliceblue; */
+}
+.title{
+    width: auto;
+    height: 100%;
+    flex-wrap: nowrap;
+    font-size:1.2rem ;
+    font-weight: 600;
+}
+.pulse{
+    color: red;
+    transition: 0.3s;
+}
+.pulse:hover{
+     font-weight: 700;
+    font-size: 1.3rem;
+}
+.gym{
+    font-size: 0.8rem;
+    position: relative;
+    top: 40%;
+    right: 43.7%;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.gym:hover{
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+#gymLogo{
+        color:#ec1111;
+         margin: auto;
+         font-size: 1rem;
+         
+    }
+    .logoGym{
+        width: 60px;
+        height: 40px;
+        display: flex;
+        transition: 0.3s;
+    }
+    .logoGym:hover{
+       width: 63px;
+       height:43px ;
+    }
+    .partLogo5{
+       width: 10%;
+        height: 70%;
+        background-color: #ec1111;
+        border-radius: 10px;
+         margin: auto;
+    }
+    .partLogo2{
+        width: 10%;
+        height: 70%;
+        background-color: #ec1111;
+        border-radius: 10px;
+         margin: auto;
+    }
+    .partLogo1{
+        width: 7%;
+        height: 30%;
+        background-color: #ec1111;
+        border-radius: 10px;
+         margin: auto;
+    }
+    .partLogo6{
+        width: 7%;
+        height: 30%;
+        background-color: #ec1111;
+        border-radius: 10px;
+        margin: auto;
+    }
+    .partLogo3{
+        width: 12%;
+        height: 90%;
+        background-color: #ec1111;
+        border-radius: 10px;
+         margin: auto;
+    }
+    .partLogo4{
+        width: 12%;
+        height: 90%;
+        background-color: #ec1111;
+        border-radius: 10px;
+         margin: auto;
+    }
+    @media (min-width: 660px) and (max-width: 1020px) {
+
+    }
