@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IronPulseGym</title>
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="body.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="logoIronPulseGym.css">
+   <link
+  href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+  rel="stylesheet"
+/>
+
+   <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+/>
+
+  </head>
+  <body>
+    <header class="header">
+        <div class="top">
+      <div class="logo">
+        <div class="logoGym">
+          <div class="partLogo1"></div>
+          <div class="partLogo2"></div>
+          <div class="partLogo3"></div>
+          <i class="bx bx-pulse" id="gymLogo"></i>
+          <div class="partLogo4"></div>
+          <div class="partLogo5"></div>
+          <div class="partLogo6"></div>
+        </div>
+        <div class="title">
+          IRON <span class="pulse">PULSE</span><span class="gym"> GYM</span>
+        </div>
+        </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#programs">PROGRAM</a></li>
+          <li><a href="#pricing">PRICING</a></li>
+          <li><a href="#triners">TRINERS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="joinNow"><button class="joinButton" popovertarget="login">JOIN NOW</button></div>
+     <div class="humbergerMenu">
+      <button popovertarget="HamburgerItem" >
+        <i class="bx bx-menu"></i>
+      </button>
+     </div>
+     <!-- ==========for humberger item============ -->
+     <div  popover id="HamburgerItem" class="hamburgerItem" >
+       <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#programs">PROGRAM</a></li>
+          <li><a href="#pricing">PRICING</a></li>
+          <li><a href="#triners">TRINERS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+     </div>
+     </div>
+    
+     </div>
+     <div class="middle">
+      <div class="middle1">
+        <h1 class="moto">
+          stronger everyday<br>
+          <span class="moto1">BULID YOUR STRENGTH.</span> <br> <span class="moto2">TRANSFORM YOUR LIFE</span><br> <span class="moto3">a modern gym with complate equipment make you reach your best</span></h1>
+          <br>
+          <button class="joinButton" popovertarget="login">Contact us</button>
+          <button class="joinButton" popovertarget="login">Join Us</button>
+      </div>
+      <div class="middle2">
+        <ul>
+          <li class="penghargaan"><i class="bx bx-group" ><span class="angkaPenghargaan">500+ <br><span class="namaPenghargaan">member</span></span></i></li>
+          <li class="penghargaan"><i class="bx bx-trophy" ><span class="angkaPenghargaan">3years+ <br><span class="namaPenghargaan">experience</span></span></i></li>
+          <li class="penghargaan">  <i class="bx bx-dumbbell" ><span class="angkaPenghargaan">50+ <br><span class="namaPenghargaan">equipment</span></span></i></li>
+        </ul>
+      </div>
+     </div>
+     <!-- ==========for sign in card============ -->
+     <div class="signIn" popover id="login">
+      <h1>sign in</h1>
+      <form action="" >
+        <div class="inputGroup">
+        <label for="name">name:</label>
+        <input type="text" placeholder="name" name="name" id="name">
+        </div>
+         <div class="inputGroup">
+        <label for="email">email:</label>
+        <input type="email" placeholder="email"name="email" id="email">
+      </div>
+      <div class="inputGroup">
+        <label for="password">password:</label>
+        <input type="password" placeholder="password" name="password" id="password"></div>
+        <button class="login">sign in</button>
+      
+      </form>
+      <button popovertarget="signUp" class="gantiLogin">sign up</button>
+     </div>
+
+<!-- ==========for sign up card============ -->
+
+     <div class="signUp" popover id="signUp">
+      <h1>sign up</h1>
+      <form action="" >
+         <div class="inputGroup">
+        <label for="name">name:</label>
+        <input type="text" placeholder="name" name="name" id="name">
+         </div>
+          <div class="inputGroup">
+        <label for="email">email:</label>
+        <input type="email" placeholder="email"name="email" id="email">
+          </div>
+          <div class="inputGroup">
+        <label for="password">password:</label>
+        <input type="password" placeholder="password" name="password" id="password"></div>
+        <button popovertarget="signUp" popovertargetaction="hide" class="login">sign up</button>
+      </form>
+       <button popovertarget="signUp" popovertargetaction="hide" class="gantiLogin">sign in</button>
+     </div>
+    </header>
+    <main class="main">
+      <div class="about" id="about">
+       <div class="aboutText">
+         <h1>ABOUT</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam laudantium accusantium laboriosam fugit amet quasi quod recusandae, temporibus, enim natus aliquid eaque inventore incidunt. Labore eveniet temporibus aliquid rem sed eaque architecto pariatur molestias nisi quos explicabo maiores sint inventore, at veritatis neque rerum quam soluta corporis ipsa dolorem vitae!</p>
+       </div>
+        <div class="keunggulan">
+        <div class="keunggulan1"><h1>loremnddd</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, quis!</p></div>
+        <div class="keunggulan2"><h1>goood</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero iusto nesciunt reiciendis provident voluptas dolore.</p></div>
+        <div class="keunggulan3"><h1>baadddd</h1><p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p></div>
+        <div class="keunggulan4"><h1>wooow</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestiae a tenetur fuga voluptates quis hic nesciunt?</p></div>
+        </div>
+      </div>
+      <div class="programs" id="programs">
+        <h1>Programs</h1>
+        <div class="programsPart"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, temporibus magnam dicta totam iure inventore aliquid nihil assumenda cumque maxime beatae accusantium voluptatum, accusamus amet quibusdam nulla aut labore hic</p><img src="muscle buyilding.jpg" alt="" srcset=""></div>
+        <div class="programsPart"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi magni repudiandae perspiciatis, exercitationem nisi asperiores veniam incidunt cum tempora iste in cumque numquam blanditiis quam, corrupti fugit! Distinctio, praesentium impedit?</p><img src="weight lifting.jpg" alt="" srcset=""></div>
+        <div class="programsPart"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste amet eius provident, harum ipsam in delectus quis est autem earum.</p><img src="cardio trining.jpg" alt=""></div>
+        <div class="programsPart"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptates iure repellat sit velit voluptas perferendis sunt harum excepturi quaerat maiores debitis soluta enim, minus id aperiam! Sapiente debitis, qui unde beatae quasi voluptates reiciendis!</p><img src="fat loss.jpg" alt=""></div>
+      </div>
+
+<!-- =========pricing========= -->
+
+      <div class="pricing" ><h1>PRICING</h1><p><span class="contactSubTitle">CHOOSE YOUR PLAN <span class="mustRed">THAT FIT YOU</span></span><br>Lorem ipsum dolor sit amet consectetur adipisici ng  elit. Optio expedita explicabo natus quas elig endibdehdhjehebsd jsndbnnsmmmmmmmjdn</p></div>
+      <div class="price" id="pricing">
+        <div class="cheap">
+          <div class="cheapLogo"><i class="bx bx-dumbbell" ></i></div>
+          <div class="textAndPrice">
+            <div class="textPart"><SPAN class="textPartBasic">BASIC</SPAN><br> For Beginer</div>
+            <div class="pricePart">18.89<span class="month">/month</span></div>
+          </div>
+          <div class="result">
+             <ul>
+                <li><i class="fa-solid fa-check"></i> nnnggggggnnnnnnnn</li>
+                <li><i class="fa-solid fa-check"></i> Loggggggggrem, ipsumbf</li>
+                <li><i class="fa-solid fa-check"></i> Lorgggggem iamet.</li>
+                <li><i class="fa-solid fa-check"></i> Logggggggggrem ipt.</li>
+                <li><i class="fa-solid fa-check"></i> Loremggggg, ipsum.</li>
+                <li><i class="fa-solid fa-check"></i> Lorevvvvvvvm, ipsum dr.</li>
+              </ul>
+          </div>
+          <div class="choosePlanB"><button popovertarget="login">CHOOSE PLAN</button></div>
+        </div>
+        <div class="medium">
+          <div class="populerCard"><i class="bx bx-star" ></i>MOST POPULER<i class="bx bx-star" ></i></div>
+            <div class="mediumLogo"><i class="fa-solid fa-hand-back-fist"></i></div>
+            <div class="textAndPrice">
+               <div class="textPart"><SPAN class="textPartMedium">Medium</SPAN><br> For Serious Progres</div>
+               <div class="pricePart">26.48<span class="month">/month</span></div>
+            </div>
+            <div class="result">
+               <ul class="resultRed">
+                <li><i class="fa-solid fa-check"></i> Loremttttt, ipsumbf</li>
+                <li><i class="fa-solid fa-check"></i> Lorgggggggggem iamet.</li>
+                <li><i class="fa-solid fa-check"></i> Loreeeeeeeem ipt.</li>
+                <li><i class="fa-solid fa-check"></i> Loreghtewem, ipsum.</li>
+                <li><i class="fa-solid fa-check"></i> Lorem, ipsum dr.</li>
+                <li><i class="fa-solid fa-check"></i> Lorem,tgryyyyyyy ipsum.</li>
+                <li><i class="fa-solid fa-check"></i> Lorem, ffffffgrgripsum.</li>
+              </ul>
+            </div>
+              <div class="choosePlanM"><button popovertarget="login">CHOOSE PLAN</button></div>
+        </div>
+        <div class="premium">
+            <div class="premiumLogo"><i class="fa-solid fa-crown"></i></div>
+            <div class="textAndPrice">
+               <div class="textPart"><SPAN class="textPartPremium">PREMIUM</SPAN><br> For Maximum Result</div>
+               <div class="pricePart">37.88<span class="month">/month</span></div>               
+            </div>
+             <div class="result">
+              <ul class="resultGold">
+                <li><i class="fa-solid fa-check"></i> nnnnnnnfebfhbfvfnnnn</li>
+                <li><i class="fa-solid fa-check"></i> Lorem, fejfbebfhipsumbf</li>
+                <li><i class="fa-solid fa-check"></i> Lorm iaffmet.</li>
+                <li><i class="fa-solid fa-check"></i> Lorem ipt.efbfbdbh</li>
+                <li><i class="fa-solid fa-check"></i> Lorem, ipsufjewfhefbfm.</li>
+                <li><i class="fa-solid fa-check"></i> Lorem, ipsum dr.</li>
+                <li><i class="fa-solid fa-check"></i> Loem, ipsumdgrnfbfebhje.</li>
+                <li><i class="fa-solid fa-check"></i> Lorem, ipsum.</li>
+              </ul>
+             </div>
+               <div class="choosePlanP"><button popovertarget="login">CHOOSE PLAN</button></div>
+        </div>
+      </div>
+
+<!-- ========trainers======= -->
+
+      <div class="contactTitle"><h1>TRAINERS</h1><p><span class="contactSubTitle">Meet Our <span class="mustRed">Trainer</span></span><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio expedita explicabo natus quas eligendi quidem cupiditate debitis tenetur sunt, velit, similique iure deserunt soluta laudantium animi, quis autem illo necessitatibus!</p></div>
+      <div class="contact" id="triners">
+        <div class="contactPerson">
+          <div class="person"><img src="orang1.jpeg" alt="" srcset=""></div>
+          <div class="personInfo">
+            <span class="namePerson">pppppppnej</span>
+            <span class="classPerson">ppuighuftydnnnnnnnnnpnej</span>
+            <span class="infoClassPerson">ppppbhuftgycpe ejnfkwbf nebppne <br>krrrrrrrrrr  ewfejfjwe jjkewbkwe njbjvghffj </span>
+            <span class="infoSkillPerson">
+              <div class="skilPerson1">Lorem ipsum dolor sit amet.</div>
+              <div class="skilPerson2">Lorem, ipsumr j4rk4r.</div>
+              <div class="skilPerson3">Lorem ipsum dolor sit.</div>
+            </span>
+            <span class="contactNow"><button popovertarget="login">Contact Now</button></span>
+          </div>
+        </div>
+        <div class="contactPerson">
+           <div class="person"><img src="orang2.jpeg" alt="" srcset=""></div>
+          <div class="personInfo">
+            <span class="namePerson">pppppppnej</span>
+            <span class="classPerson">ppuighuftydnnnnnnnnnpnej</span>
+            <span class="infoClassPerson">ppppbhuftgycpe ejnfkwbf nebppne <br>krrrrrrrrrr  ewfejfjwe jjkewbkwe njbjvghffj </span>
+            <span class="infoSkillPerson">
+              <div class="skilPerson1">Lorem ipsum dolor sit amet.</div>
+              <div class="skilPerson2">Lorem, ipsumr j4rk4r.</div>
+              <div class="skilPerson3">Lorem ipsum dolor sit.</div>
+            </span>
+            <span class="contactNow"><button popovertarget="login">Contact Now</button></span>
+          </div>
+        </div>
+        <div class="contactPerson"> <div class="person"><img src="orang3.jpeg" alt="" srcset=""></div>
+          <div class="personInfo">
+            <span class="namePerson">pppppppnej</span>
+            <span class="classPerson">ppuighuftydnnnnnnnnnpnej</span>
+            <span class="infoClassPerson">ppppbhuftgycpe ejnfkwbf nebppne <br>krrrrrrrrrr  ewfejfjwe jjkewbkwe njbjvghffj </span>
+            <span class="infoSkillPerson">
+              <div class="skilPerson1">Lorem ipsum dolor sit amet.</div>
+              <div class="skilPerson2">Lorem, ipsumr j4rk4r.</div>
+              <div class="skilPerson3">Lorem ipsum dolor sit.</div>
+            </span>
+            <span class="contactNow"><button popovertarget="login">Contact Now</button></span>
+          </div></div>
+        <div class="contactPerson"> <div class="person"><img src="orang4.jpeg" alt="" srcset=""></div>
+          <div class="personInfo">
+            <span class="namePerson">pppppppnej</span>
+            <span class="classPerson">ppuighuftydnnnnnnnnnpnej</span>
+            <span class="infoClassPerson">ppppbhuftgycpe ejnfkwbf nebppne <br>krrrrrrrrrr  ewfejfjwe jjkewbkwe njbjvghffj </span>
+            <span class="infoSkillPerson">
+              <div class="skilPerson1">Lorem ipsum dolor sit amet.</div>
+              <div class="skilPerson2">Lorem, ipsumr j4rk4r.</div>
+              <div class="skilPerson3">Lorem ipsum dolor sit.</div>
+            </span>
+            <span class="contactNow"><button popovertarget="login">Contact Now</button></span>
+          </div></div>
+      </div>
+    </main>
+    <footer class="footer" id="contact">
+      <div class="footer1">
+      <div class="footerIsi1">
+        <div class="footerIsi11">
+        <div class="logoGym">
+          <div class="partLogo1"></div>
+          <div class="partLogo2"></div>
+          <div class="partLogo3"></div>
+          <i class="bx bx-pulse" id="gymLogo"></i>
+          <div class="partLogo4"></div>
+          <div class="partLogo5"></div>
+          <div class="partLogo6"></div>
+        </div>
+        <div class="textTitleBottom">IRON <span class="pulseBottom">PULSE</span><span class="gymBottom"> GYM</span></div>
+      </div>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde culpa nisi quidem fugit beatae accusantium corporis inventore sint, quis officiis?
+      <div class="cta">
+        <div class="x"><i class="fa-brands fa-x-twitter"></i></div>
+        <div class="wa"><i class="fa-brands fa-whatsapp"></i></div>
+        <div class="ig"><i class="fa-brands fa-instagram"></i></div>
+        <div class="yt"><i class="fa-brands fa-youtube"></i></div>
+        <div class="fb"><i class="fa-brands fa-facebook-f"></i></div>
+      </div>
+      </div>
+      <div class="footerIsi2">
+        <div class="footerHeader"><span class="redLine">Qui</span>ck Links</div>
+        <ul>
+           <li><i class="bx bx-chevron-right" ></i><a href="#">Home</a></li>
+          <li><i class="bx bx-chevron-right"></i><a href="#about">About</a></li>
+          <li><i class="bx bx-chevron-right" ></i><a href="#programs">Programs</a></li>
+          <li><i class="bx bx-chevron-right"></i><a href="#pricing">Pricing</a></li>
+          <li><i class="bx bx-chevron-right"></i><a href="#triners">Triners</a></li>
+          <li><i class="bx bx-chevron-right"></i><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footerIsi3">
+         <div class="footerHeader"><span class="redLine">Con</span>tact Us</div>
+         <ul>
+          <li><i class="fa-solid fa-location-dot"></i><span id="text"> 1232 faiysb dddsj</span> <br><span id="turun">jdk bhejfbhry</span></li>
+          <li><i class="fa-solid fa-phone"></i><span id="text">1232-333-455</span></li>
+          <li><i class="fa-solid fa-envelope"></i><span id="text">meihebjeh@gmail.com</span></li>
+          <li><i class="fa-solid fa-calendar"></i><span id="text"> mot-sasb 29pm-29pm</span> <br><span id="turun">eis 65am-45am</span></li>
+         </ul>
+      </div>
+      <div class="footerIsi4">
+         <div class="footerHeader"><span class="redLine">Ne</span>ws Letter</div>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, deserunt.
+         <div id="footerForm">
+          <input type="email">
+         <button popovertarget="login">
+          <i class="bx bx-paper-plane" ></i>
+         </button></div>
+      </div>
+      </div>
+      <div class="footer2">
+        <div class="copyright">&copy; 2026 Iron Pulse Gym.All Right Reserved</div>
+        <div class="desaigned">Desaigned by Robertdev2412.</div>
+        <div class="privacy">Privacy Policy | Terms of Services</div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+
